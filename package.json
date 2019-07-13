@@ -1,6 +1,6 @@
 {
   "name": "@pablosz/vhost",
-  "version": "3.0.2",
+  "version": "4.0.0",
   "description": "virtual domain hosting",
   "keywords": [
     "express",
