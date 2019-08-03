@@ -1,14 +1,14 @@
 {
-  "name": "@pablosz/vhost",
+  "name": "vhost-ts",
   "version": "4.0.0",
-  "description": "virtual domain hosting",
+  "description": "vhost fork made with typescript",
   "keywords": [
     "express",
     "typescript",
     "vhost",
     "virtual hosting"
   ],
-  "repository": "git://github.com/PabloSzx/vhost",
+  "repository": "git://github.com/PabloSzx/vhost-ts",
   "license": "MIT",
   "files": [
     "dist"
@@ -19,8 +19,9 @@
   "source": "src/index.ts",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "microbundle",
-    "dev": "microbundle watch"
+    "build": "microbundle --target node",
+    "dev": "microbundle watch",
+    "prepublishOnly": "yarn build"
   },
   "devDependencies": {
     "@types/express": "^4.17.0",
